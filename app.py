@@ -1,22 +1,46 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+'''
+Autor: Maciej Kiełek, nr albumu 420204, I rok magisterski Bioinformatyki na Wydziale MIM, UW.
+Projekt zaliczeniowy z pythona 1.
+Program określa na podstawie słownika, który mu się dostarcza po przez argument -s w formie pliku tekstowego trudność
+języka stron internetowych. (Słownik frekwencyjny powinien być zapisany w postaci pliku tekstowego gdzie w każdej linii
+jest podane słowo oraz po spacji jego częstość)
+Strony internetowa można podać na 3 sposoby po przez argument -w:
+1. Plik tekstowy w formacie .txt ze adresami stron internetowych, każdy w osobnej linii
+2. Adres pojedynczej strony internetowej (np.: adresstrony.pl ; dopuszczalne też są adresy o podwójnych domenach typu adresstrony.com.pl)
+3. Adres dostarczony w formie Standard input.
+Program nie posiada funkcji '-help'.
+Chciałem użyć argpare żeby było to troszkę bardziej intuicyjne, ale wymagany był getopt().
+'''
+
 import requests as req
 import re
 import sys
 import getopt
 
-argv = sys.argv[1:]
-opts, args = getopt.getopt(argv, 's:w:')
-for opt, arg in opts:
-	if opt in ['-s']:
-		nazwa_slownika = argv[1]
-	if opt in ['-w']:
-		if argv[3] == re.search('.+\..+\..+', argv[3]):
-			print(argv[3])
-			adres = str(argv.pop[3])
-			print(adres)
+#tutaj tworzę parser, który przyjmuje dwa argument - slownik (s) oraz adresy url (w)
 
+argv = sys.argv[1:]
+if len(argv) == 4:
+	opts, args = getopt.getopt(argv, 's:w:')
+	for opt, arg in opts:
+		if opt in ['-s']:
+			nazwa_slownika = arg
+		if opt in ['-w']:
+			urle = arg
+
+else:
+	argv = sys.argv[5:]
+	opts, args = getopt.getopt(argv, 's:w:')
+	for opt, arg in opts:
+		if opt in ['-s']:
+			nazwa_slownika = arg
+		if opt in ['-w']:
+			urle = arg
+# print(urle)
+#tworzę słownik, pozbywam się słowa "się" z czasowników zwrotnych
 f = open(nazwa_slownika)
 slownik_txt = f.read()
 f.close()
@@ -25,13 +49,36 @@ slownik_txt = re.split('\W', slownik_txt)
 slownik_txt = dict(slownik_txt[i:i+2] for i in range(0, len(slownik_txt), 2))
 slownik_txt = dict([key, int(value)] for key, value in slownik_txt.items())
 
+#program sprawdza czy ma do czynienia z plikiem z adresami url(.txt), adresem strony, bądź standard input
 
+if re.search('.+\.txt', urle) != None:
+	urle_txt = open(urle).read()
+	linki = urle_txt.split('\n')
+	linki.pop()
+elif re.search('.*\.?.+\.?.+\..+', urle) != None:
+	linki = []
+	linki.append(urle)
+elif urle == '-':
+	linki = []
+	for line in sys.stdin:
+		print(line)
+else:
+	linki = []
+	print('Podano blednie url badz plik z adresami url.')
+
+
+
+
+#funkcja przyjmującą jako argument adres strony
 def score_strony(adres):
+
+#słwoniki, które później przydadzą się przy web scrapingu - tekst ze stron będzie wyciągany na podstawie kluczy zawartych w poniższych słownikach
 	kodowniki = {'span': [], 'a': [], 'p': [], 'li': [], 'pre': [], 'h1': [], 'h2': [], 'h3': [], 'h4': [], 'h5': [],
 				 'div': []}
 	lista_slow = {'span': [], 'a': [], 'p': [], 'li': [], 'pre': [], 'h1': [], 'h2': [], 'h3': [], 'h4': [], 'h5': [],
 				  'div': []}
 
+#przedziały wg których będzie ewaluwoany tekst napisany na stronie
 	trudnosc = {'trudnym': 0.2, 'srednio-trudnym': 0.4, 'srednim': 0.6, 'srednio-latwym': 0.8, 'latwym': 1}
 
 	text = []
@@ -45,7 +92,7 @@ def score_strony(adres):
 
 	strona = (req.get(link)).text
 
-	# wyciągam na podstawie <span>, <a>, <p>
+
 	for wyraz in kodowniki:
 		kodowniki[wyraz] = re.findall('<' + wyraz + '.*?>\s*.+\s*<\/' + wyraz + '>', strona)
 		for kod in kodowniki[wyraz]:
@@ -95,12 +142,26 @@ def score_strony(adres):
 			info_norm_score = ('Tekst zostal napisany ' + str([key for key, value in trudnosc.items() if i == value].pop()) + ' jezykiem. Score wynosi: ' + str(round(norm_score, 4)))
 			break
 	if wsp_wyraz_nrozp >= 50:
-		info_nrozp = (str(wsp_wyraz_nrozp) + ' % wyrazow ze strony internetowej {} nie zostalo rozpoznanych w podanym słowniku. W celu uzyskania lepszego wyniku, sprobuj uzyc obszerniejszego slownika.').format(link)
+		info_nrozp = str(wyraz_nrozp) + ', czyli ' + (str(wsp_wyraz_nrozp) + ' % wszystkich wyrazow ze strony internetowej {} nie zostalo rozpoznanych w podanym słowniku. W celu uzyskania lepszego wyniku, sprobuj uzyc obszerniejszego slownika.').format(link)
 	else:
-		info_nrozp = (str(wsp_wyraz_nrozp) + ' % wyrazow ze strony internetowej {} nie zostalo rozpoznanych w podanym słowniku.').format(link)
+		info_nrozp = str(wyraz_nrozp) + ', czyli ' + (str(wsp_wyraz_nrozp) + ' % wszystkich wyrazow ze strony internetowej {} nie zostalo rozpoznanych w podanym słowniku.').format(link)
 
-	info_l_wyraz = print('Liczba odczytanych wyrazow wynosi: ' + str(len(text)))
+	info_l_wyraz = 'Liczba odczytanych wyrazow wynosi: ' + str(len(text))
 
-	return info_l_wyraz, info_norm_score, info_nrozp
 
-print(score_strony(adres))
+	info_adres_strony = 'Analizowana strona to: ' + link
+
+	return info_adres_strony, info_l_wyraz, info_norm_score, info_nrozp
+
+if len(linki) != 0:
+	for link in linki:
+		if link != re.search('[^http://]', link):
+			link = 'http://'+link
+			for element in score_strony(link):
+				print(element)
+			print('\n---------------------------------------------\n')
+		else:
+			for element in score_strony(link):
+				print(element)
+			print('\n---------------------------------------------\n')
+
