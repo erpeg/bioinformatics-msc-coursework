@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 '''
-Autor: Maciej Kiełek, nr albumu 420204, I rok magisterski Bioinformatyki na Wydziale MIM, UW.
-Projekt zaliczeniowy z pythona 1.
 Program określa na podstawie słownika, który mu się dostarcza po przez argument -s w formie pliku tekstowego trudność
 języka stron internetowych. (Słownik frekwencyjny powinien być zapisany w postaci pliku tekstowego gdzie w każdej linii
 jest podane słowo oraz po spacji jego częstość)
