@@ -164,6 +164,7 @@ class SeqAnalyzer:
         == ({'Q': 2.0}, {'T': 0.5, 'W': 0.5})
         True
         """
+        # To fix: len(list_c_terminus) istead of len(set(list_c_terminus)), same goes to n_terminus
         list_c_terminus = [seq[-1] for seq in id_seq_dictionary.values()]
         aa_n_terminus = {
             i: round(list_c_terminus.count(i) / len(set(list_c_terminus)), round_value) for i in set(list_c_terminus)
