@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Population of selected countries throughout the years</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.2.min.js" integrity="sha384-ufR9RFnRs6lniiaFvtJziE0YeidtAgBRH6ux2oUItHw5WTvE1zuk9uzhUU/FJXDp" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="e4e55339-d9fc-4b07-b641-e8753349abb7" data-root-id="1001"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1433">
+          {"271dee76-c1ab-4466-a47a-f5e3373732a5":{"roots":{"references":[{"attributes":{"source":{"id":"1046"}},"id":"1051","type":"CDSView"},{"attributes":{},"id":"1065","type":"BasicTickFormatter"},{"attributes":{"axis":{"id":"1016"},"dimension":1,"ticker":null},"id":"1019","type":"Grid"},{"attributes":{},"id":"1073","type":"UnionRenderers"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1020"},{"id":"1021"},{"id":"1022"},{"id":"1023"},{"id":"1024"},{"id":"1025"}]},"id":"1027","type":"Toolbar"},{"attributes":{"data":{"Country":["Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia","Saudi Arabia"],"Population":[4086539.0,4218853.0,4362786.0,4516533.0,4677298.0,4843635.0,5015357.0,5195135.0,5387828.0,5599904.0,5836389.0,6100626.0,6392970.0,6711923.0,7054532.0,7419493.0,7802926.0,8207697.0,8646845.0,9137927.0,9691476.0,10311775.0,10988853.0,11701128.0,12418834.0,13118993.0,13794165.0,14445671.0,15070082.0,15666297.0,16233785.0,16772694.0,17282691.0,17763298.0,18214470.0,18638787.0,19033845.0,19407142.0,19783304.0,20194527.0,20663843.0,21202642.0,21805313.0,22456649.0,23132682.0,23816183.0,24498310.0,25184597.0,25888541.0,26630303.0,27421461.0,28267685.0,29155187.0,30052518.0,30916994.0,31717667.0,32442572.0,33099147.0,33699947.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1076"},"selection_policy":{"id":"1077"}},"id":"1052","type":"ColumnDataSource"},{"attributes":{},"id":"1074","type":"Selection"},{"attributes":{"line_color":"magenta","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1054","type":"Line"},{"attributes":{},"id":"1075","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"1046"},"glyph":{"id":"1048"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1049"},"selection_glyph":null,"view":{"id":"1051"}},"id":"1050","type":"GlyphRenderer"},{"attributes":{},"id":"1010","type":"LinearScale"},{"attributes":{"data":{"Country":["Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan","Jordan"],"Population":[933102.0,973988.0,1010658.0,1050213.0,1102399.0,1173606.0,1267062.0,1378998.0,1500163.0,1617428.0,1721323.0,1809182.0,1883935.0,1948442.0,2007735.0,2065913.0,2123180.0,2179363.0,2237943.0,2303122.0,2377995.0,2464867.0,2563534.0,2671413.0,2784463.0,2900049.0,3015299.0,3131796.0,3256558.0,3399330.0,3565890.0,3760496.0,3977672.0,4201555.0,4410359.0,4588843.0,4732854.0,4848541.0,4943975.0,5031762.0,5122493.0,5217336.0,5317506.0,5434030.0,5580244.0,5765635.0,5991540.0,6255280.0,6556478.0,6893260.0,7261539.0,7663131.0,8090872.0,8520420.0,8920049.0,9266575.0,9551467.0,9779173.0,9956011.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1072"},"selection_policy":{"id":"1073"}},"id":"1040","type":"ColumnDataSource"},{"attributes":{"line_color":"blue","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1042","type":"Line"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1026","type":"BoxAnnotation"},{"attributes":{},"id":"1076","type":"Selection"},{"attributes":{"line_color":"red","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1036","type":"Line"},{"attributes":{"data":{"Country":["Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq","Iraq"],"Population":[7289760.0,7475350.0,7674220.0,7888913.0,8122197.0,8375790.0,8651162.0,8947404.0,9260682.0,9585576.0,9917983.0,10255850.0,10599668.0,10950888.0,11312062.0,11684590.0,12068676.0,12462070.0,12860680.0,13259113.0,13653354.0,14044117.0,14432468.0,14815656.0,15190393.0,15555800.0,15909762.0,16257070.0,16612322.0,16994948.0,17419113.0,17889459.0,18402734.0,18955085.0,19539340.0,20149338.0,20783073.0,21439574.0,22114324.0,22802064.0,23497585.0,24208180.0,24931919.0,25644499.0,26313838.0,26922284.0,27448124.0,27911248.0,28385746.0,28973162.0,29741976.0,30725300.0,31890011.0,33157050.0,34411951.0,35572261.0,36610632.0,37552781.0,38433600.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1070"},"selection_policy":{"id":"1071"}},"id":"1034","type":"ColumnDataSource"},{"attributes":{"line_alpha":0.1,"line_color":"orange","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1049","type":"Line"},{"attributes":{"source":{"id":"1058"}},"id":"1063","type":"CDSView"},{"attributes":{},"id":"1077","type":"UnionRenderers"},{"attributes":{"line_alpha":0.1,"line_color":"red","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1037","type":"Line"},{"attributes":{"source":{"id":"1034"}},"id":"1039","type":"CDSView"},{"attributes":{"text":"Population of countries throught the years"},"id":"1002","type":"Title"},{"attributes":{},"id":"1020","type":"PanTool"},{"attributes":{},"id":"1078","type":"Selection"},{"attributes":{"source":{"id":"1052"}},"id":"1057","type":"CDSView"},{"attributes":{},"id":"1021","type":"WheelZoomTool"},{"attributes":{"line_color":"green","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1060","type":"Line"},{"attributes":{},"id":"1067","type":"BasicTickFormatter"},{"attributes":{},"id":"1079","type":"UnionRenderers"},{"attributes":{"data":{"Country":["Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep.","Yemen, Rep."],"Population":[5315355.0,5393036.0,5473671.0,5556766.0,5641597.0,5727751.0,5816247.0,5907874.0,6001852.0,6097035.0,6193384.0,6290365.0,6390574.0,6500816.0,6629999.0,6784695.0,6967941.0,7178675.0,7414158.0,7669694.0,7941898.0,8231910.0,8541605.0,8869370.0,9213084.0,9572175.0,9941109.0,10322043.0,10730862.0,11189177.0,11709993.0,12302124.0,12954155.0,13634076.0,14297613.0,14913315.0,15469274.0,15975668.0,16450310.0,16921149.0,17409072.0,17918373.0,18443691.0,18985000.0,19540098.0,20107409.0,20687646.0,21282515.0,21892146.0,22516460.0,23154855.0,23807588.0,24473178.0,25147109.0,25823485.0,26497889.0,27168210.0,27834821.0,28498687.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1078"},"selection_policy":{"id":"1079"}},"id":"1058","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"1034"},"glyph":{"id":"1036"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1037"},"selection_glyph":null,"view":{"id":"1039"}},"id":"1038","type":"GlyphRenderer"},{"attributes":{"overlay":{"id":"1026"}},"id":"1022","type":"BoxZoomTool"},{"attributes":{"below":[{"id":"1012"}],"center":[{"id":"1015"},{"id":"1019"}],"left":[{"id":"1016"}],"renderers":[{"id":"1038"},{"id":"1044"},{"id":"1050"},{"id":"1056"},{"id":"1062"}],"title":{"id":"1002"},"toolbar":{"id":"1027"},"x_range":{"id":"1004"},"x_scale":{"id":"1008"},"y_range":{"id":"1006"},"y_scale":{"id":"1010"}},"id":"1001","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1006","type":"DataRange1d"},{"attributes":{},"id":"1023","type":"SaveTool"},{"attributes":{"source":{"id":"1040"}},"id":"1045","type":"CDSView"},{"attributes":{"data_source":{"id":"1052"},"glyph":{"id":"1054"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1055"},"selection_glyph":null,"view":{"id":"1057"}},"id":"1056","type":"GlyphRenderer"},{"attributes":{},"id":"1004","type":"DataRange1d"},{"attributes":{},"id":"1024","type":"ResetTool"},{"attributes":{"data":{"Country":["Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman","Oman"],"Population":[551740.0,564893.0,578823.0,593504.0,608889.0,625009.0,642001.0,660114.0,679595.0,700729.0,723851.0,748968.0,776380.0,806986.0,841950.0,882047.0,927436.0,977804.0,1032799.0,1091852.0,1154377.0,1220585.0,1290111.0,1361087.0,1431070.0,1498418.0,1561185.0,1619863.0,1678110.0,1741156.0,1812161.0,1893768.0,1983275.0,2072104.0,2148419.0,2204277.0,2236654.0,2249762.0,2251864.0,2254904.0,2267973.0,2294962.0,2334858.0,2386166.0,2445517.0,2511251.0,2580758.0,2657158.0,2750963.0,2876186.0,3041434.0,3251108.0,3498029.0,3764805.0,4027260.0,4267348.0,4479219.0,4665935.0,4829483.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1074"},"selection_policy":{"id":"1075"}},"id":"1046","type":"ColumnDataSource"},{"attributes":{"line_alpha":0.1,"line_color":"green","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1061","type":"Line"},{"attributes":{"line_alpha":0.1,"line_color":"magenta","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1055","type":"Line"},{"attributes":{},"id":"1008","type":"LinearScale"},{"attributes":{},"id":"1025","type":"HelpTool"},{"attributes":{"line_color":"orange","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1048","type":"Line"},{"attributes":{"data_source":{"id":"1040"},"glyph":{"id":"1042"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1043"},"selection_glyph":null,"view":{"id":"1045"}},"id":"1044","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"1065"},"ticker":{"id":"1013"}},"id":"1012","type":"LinearAxis"},{"attributes":{},"id":"1071","type":"UnionRenderers"},{"attributes":{"line_alpha":0.1,"line_color":"blue","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1043","type":"Line"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{},"id":"1072","type":"Selection"},{"attributes":{},"id":"1013","type":"BasicTicker"},{"attributes":{},"id":"1070","type":"Selection"},{"attributes":{"formatter":{"id":"1067"},"ticker":{"id":"1017"}},"id":"1016","type":"LinearAxis"},{"attributes":{"axis":{"id":"1012"},"ticker":null},"id":"1015","type":"Grid"},{"attributes":{"data_source":{"id":"1058"},"glyph":{"id":"1060"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1061"},"selection_glyph":null,"view":{"id":"1063"}},"id":"1062","type":"GlyphRenderer"}],"root_ids":["1001"]},"title":"Bokeh Application","version":"2.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1433').textContent;
+                  var render_items = [{"docid":"271dee76-c1ab-4466-a47a-f5e3373732a5","root_ids":["1001"],"roots":{"1001":"e4e55339-d9fc-4b07-b641-e8753349abb7"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
