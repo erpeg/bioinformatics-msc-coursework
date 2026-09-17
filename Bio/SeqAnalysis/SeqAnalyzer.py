@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Copyright 2019-2020 by moozeq, KacDom, erpeg and s0lczi. All rights reserved.
 # This file is part of the Biopython distribution and governed by your
 # choice of the "Biopython License Agreement" or the "BSD 3-Clause License".
@@ -175,6 +176,7 @@ class SeqAnalyzer:
         == ({'Q': 2.0}, {'T': 0.5, 'W': 0.5})
         True
         """
+        # To fix: len(list_c_terminus) istead of len(set(list_c_terminus)), same goes to n_terminus
         list_c_terminus = [seq[-1] for seq in id_seq_dictionary.values()]
         aa_n_terminus = {
             i: round(list_c_terminus.count(i) / len(set(list_c_terminus)), round_value) for i in set(list_c_terminus)
@@ -236,4 +238,3 @@ class SeqAnalyzer:
             dict_each_sequence[key]['n_term_freq'] = {self.terminus_aa[index][0]: 1}
 
         return dict_all_sequences, dict_each_sequence
-
