@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Population of selected countries throughout the years</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.2.min.js" integrity="sha384-ufR9RFnRs6lniiaFvtJziE0YeidtAgBRH6ux2oUItHw5WTvE1zuk9uzhUU/FJXDp" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="3ac86be2-7bb2-4504-9495-98a30700f799" data-root-id="1001"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1433">
+          {"14f74311-2e84-4487-8008-99c3593bbe2a":{"roots":{"references":[{"attributes":{},"id":"1074","type":"UnionRenderers"},{"attributes":{"data":{"Country":["France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France","France"],"Population":[46621669.0,47240543.0,47904877.0,48582611.0,49230595.0,49818028.0,50330262.0,50775794.0,51175508.0,51561836.0,51957738.0,52371342.0,52793138.0,53207734.0,53592233.0,53931390.0,54220022.0,54467702.0,54691851.0,54917118.0,55161527.0,55430296.0,55718933.0,56023770.0,56337666.0,56654696.0,56976123.0,57302663.0,57627105.0,57940212.0,58235697.0,58559311.0,58851217.0,59106768.0,59327192.0,59541899.0,59753100.0,59964851.0,60186288.0,60496718.0,60912500.0,61357430.0,61805267.0,62244886.0,62704895.0,63179351.0,63621381.0,64016225.0,64374984.0,64707040.0,65027507.0,65342780.0,65659809.0,65998687.0,66316100.0,66593366.0,66859768.0,66865144.0,66987244.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1071"},"selection_policy":{"id":"1072"}},"id":"1040","type":"ColumnDataSource"},{"attributes":{"source":{"id":"1046"}},"id":"1051","type":"CDSView"},{"attributes":{},"id":"1075","type":"Selection"},{"attributes":{"line_color":"green","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1060","type":"Line"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1026","type":"BoxAnnotation"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1020"},{"id":"1021"},{"id":"1022"},{"id":"1023"},{"id":"1024"},{"id":"1025"}]},"id":"1027","type":"Toolbar"},{"attributes":{"line_color":"magenta","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1054","type":"Line"},{"attributes":{},"id":"1076","type":"UnionRenderers"},{"attributes":{"data":{"Country":["Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy","Italy"],"Population":[50199700.0,50536350.0,50879450.0,51252000.0,51675350.0,52112350.0,52519000.0,52900500.0,53235750.0,53537950.0,53821850.0,54073490.0,54381345.0,54751406.0,55110868.0,55441001.0,55718260.0,55955411.0,56155143.0,56317749.0,56433883.0,56501675.0,56543548.0,56564074.0,56576718.0,56593071.0,56596155.0,56601931.0,56629288.0,56671781.0,56719240.0,56758521.0,56797087.0,56831821.0,56843400.0,56844303.0,56860281.0,56890372.0,56906744.0,56916317.0,56942108.0,56974100.0,57059007.0,57313203.0,57685327.0,57969484.0,58143979.0,58438310.0,58826731.0,59095365.0,59277417.0,59379449.0,59539717.0,60233948.0,60789140.0,60730582.0,60627498.0,60536709.0,60431283.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1075"},"selection_policy":{"id":"1076"}},"id":"1052","type":"ColumnDataSource"},{"attributes":{},"id":"1077","type":"Selection"},{"attributes":{"line_alpha":0.1,"line_color":"red","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1037","type":"Line"},{"attributes":{},"id":"1020","type":"PanTool"},{"attributes":{"source":{"id":"1052"}},"id":"1057","type":"CDSView"},{"attributes":{},"id":"1078","type":"UnionRenderers"},{"attributes":{},"id":"1008","type":"LinearScale"},{"attributes":{},"id":"1021","type":"WheelZoomTool"},{"attributes":{"line_color":"blue","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1042","type":"Line"},{"attributes":{"data_source":{"id":"1034"},"glyph":{"id":"1036"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1037"},"selection_glyph":null,"view":{"id":"1039"}},"id":"1038","type":"GlyphRenderer"},{"attributes":{"data":{"Country":["Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal"],"Population":[8857716.0,8929316.0,8993985.0,9030355.0,9035365.0,8998595.0,8930990.0,8874520.0,8836650.0,8757705.0,8680431.0,8643756.0,8630430.0,8633100.0,8754365.0,9093470.0,9355810.0,9455675.0,9558250.0,9661265.0,9766312.0,9851362.0,9911771.0,9957865.0,9996232.0,10023613.0,10032734.0,10030031.0,10019610.0,10005000.0,9983218.0,9960235.0,9952494.0,9964675.0,9991525.0,10026176.0,10063945.0,10108977.0,10160196.0,10217828.0,10289898.0,10362722.0,10419631.0,10458821.0,10483861.0,10503330.0,10522288.0,10542964.0,10558177.0,10568247.0,10573100.0,10557560.0,10514844.0,10457295.0,10401062.0,10358076.0,10325452.0,10300300.0,10281762.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1077"},"selection_policy":{"id":"1078"}},"id":"1058","type":"ColumnDataSource"},{"attributes":{"overlay":{"id":"1026"}},"id":"1022","type":"BoxZoomTool"},{"attributes":{},"id":"1069","type":"Selection"},{"attributes":{"source":{"id":"1040"}},"id":"1045","type":"CDSView"},{"attributes":{},"id":"1023","type":"SaveTool"},{"attributes":{},"id":"1024","type":"ResetTool"},{"attributes":{"below":[{"id":"1012"}],"center":[{"id":"1015"},{"id":"1019"}],"left":[{"id":"1016"}],"renderers":[{"id":"1038"},{"id":"1044"},{"id":"1050"},{"id":"1056"},{"id":"1062"}],"title":{"id":"1002"},"toolbar":{"id":"1027"},"x_range":{"id":"1004"},"x_scale":{"id":"1008"},"y_range":{"id":"1006"},"y_scale":{"id":"1010"}},"id":"1001","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"1052"},"glyph":{"id":"1054"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1055"},"selection_glyph":null,"view":{"id":"1057"}},"id":"1056","type":"GlyphRenderer"},{"attributes":{"data":{"Country":["Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary","Hungary"],"Population":[9983967.0,10029321.0,10061734.0,10087947.0,10119835.0,10147935.0,10178653.0,10216604.0,10255815.0,10298723.0,10337910.0,10367537.0,10398489.0,10432055.0,10478720.0,10540525.0,10598677.0,10648031.0,10684822.0,10704152.0,10711122.0,10711848.0,10705535.0,10689463.0,10668095.0,10648713.0,10630564.0,10612741.0,10596487.0,10481719.0,10373988.0,10373400.0,10369341.0,10357523.0,10343355.0,10328965.0,10311238.0,10290486.0,10266570.0,10237530.0,10210971.0,10187576.0,10158608.0,10129552.0,10107146.0,10087065.0,10071370.0,10055780.0,10038188.0,10022650.0,10000023.0,9971727.0,9920362.0,9893082.0,9866468.0,9843028.0,9814023.0,9787966.0,9768785.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1073"},"selection_policy":{"id":"1074"}},"id":"1046","type":"ColumnDataSource"},{"attributes":{"source":{"id":"1034"}},"id":"1039","type":"CDSView"},{"attributes":{},"id":"1010","type":"LinearScale"},{"attributes":{"line_alpha":0.1,"line_color":"magenta","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1055","type":"Line"},{"attributes":{},"id":"1025","type":"HelpTool"},{"attributes":{},"id":"1006","type":"DataRange1d"},{"attributes":{"data_source":{"id":"1040"},"glyph":{"id":"1042"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1043"},"selection_glyph":null,"view":{"id":"1045"}},"id":"1044","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"1065"},"ticker":{"id":"1013"}},"id":"1012","type":"LinearAxis"},{"attributes":{},"id":"1067","type":"BasicTickFormatter"},{"attributes":{},"id":"1004","type":"DataRange1d"},{"attributes":{"line_color":"red","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1036","type":"Line"},{"attributes":{"line_alpha":0.1,"line_color":"green","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1061","type":"Line"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{"line_alpha":0.1,"line_color":"blue","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1043","type":"Line"},{"attributes":{},"id":"1065","type":"BasicTickFormatter"},{"attributes":{},"id":"1013","type":"BasicTicker"},{"attributes":{},"id":"1070","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"1058"},"glyph":{"id":"1060"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1061"},"selection_glyph":null,"view":{"id":"1063"}},"id":"1062","type":"GlyphRenderer"},{"attributes":{"line_color":"orange","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1048","type":"Line"},{"attributes":{"axis":{"id":"1012"},"ticker":null},"id":"1015","type":"Grid"},{"attributes":{},"id":"1071","type":"Selection"},{"attributes":{"axis":{"id":"1016"},"dimension":1,"ticker":null},"id":"1019","type":"Grid"},{"attributes":{"data_source":{"id":"1046"},"glyph":{"id":"1048"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1049"},"selection_glyph":null,"view":{"id":"1051"}},"id":"1050","type":"GlyphRenderer"},{"attributes":{},"id":"1072","type":"UnionRenderers"},{"attributes":{"formatter":{"id":"1067"},"ticker":{"id":"1017"}},"id":"1016","type":"LinearAxis"},{"attributes":{"source":{"id":"1058"}},"id":"1063","type":"CDSView"},{"attributes":{"data":{"Country":["Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain","Spain"],"Population":[30455000.0,30739250.0,31023366.0,31296651.0,31609195.0,31954292.0,32283194.0,32682947.0,33113134.0,33441054.0,33814531.0,34224490.0,34604469.0,34988947.0,35373335.0,35757900.0,36137812.0,36511638.0,36864898.0,37191330.0,37491165.0,37758631.0,37986012.0,38171525.0,38330364.0,38469512.0,38584624.0,38684815.0,38766939.0,38827764.0,38867322.0,38966376.0,39157685.0,39361262.0,39549108.0,39724050.0,39889852.0,40057389.0,40223509.0,40386875.0,40567864.0,40850412.0,41431558.0,42187645.0,42921895.0,43653155.0,44397319.0,45226803.0,45954106.0,46362946.0,46576897.0,46742697.0,46773055.0,46620045.0,46480882.0,46444832.0,46483569.0,46593236.0,46723749.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1069"},"selection_policy":{"id":"1070"}},"id":"1034","type":"ColumnDataSource"},{"attributes":{"line_alpha":0.1,"line_color":"orange","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1049","type":"Line"},{"attributes":{},"id":"1073","type":"Selection"},{"attributes":{"text":"Population of countries throught the years"},"id":"1002","type":"Title"}],"root_ids":["1001"]},"title":"Bokeh Application","version":"2.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1433').textContent;
+                  var render_items = [{"docid":"14f74311-2e84-4487-8008-99c3593bbe2a","root_ids":["1001"],"roots":{"1001":"3ac86be2-7bb2-4504-9495-98a30700f799"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

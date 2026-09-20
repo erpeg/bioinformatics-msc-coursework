@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Population of selected countries throughout the years</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.2.min.js" integrity="sha384-ufR9RFnRs6lniiaFvtJziE0YeidtAgBRH6ux2oUItHw5WTvE1zuk9uzhUU/FJXDp" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="c8f77b9d-9af9-4e23-9f41-87c9b80f0e65" data-root-id="1001"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1433">
+          {"12680213-d96b-4c33-bffc-1d471fdaf3f1":{"roots":{"references":[{"attributes":{"source":{"id":"1058"}},"id":"1063","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1020"},{"id":"1021"},{"id":"1022"},{"id":"1023"},{"id":"1024"},{"id":"1025"}]},"id":"1027","type":"Toolbar"},{"attributes":{"line_alpha":0.1,"line_color":"orange","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1049","type":"Line"},{"attributes":{},"id":"1075","type":"UnionRenderers"},{"attributes":{"data":{"Country":["Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan","Japan"],"Population":[92500572.0,94943000.0,95832000.0,96812000.0,97826000.0,98883000.0,99790000.0,100725000.0,101061000.0,103172000.0,104345000.0,105697000.0,107188000.0,108079000.0,110162000.0,111940000.0,112771000.0,113863000.0,114898000.0,115870000.0,116782000.0,117648000.0,118449000.0,119259000.0,120018000.0,120754000.0,121492000.0,122091000.0,122613000.0,123116000.0,123537000.0,123921000.0,124229000.0,124536000.0,124961000.0,125439000.0,125757000.0,126057000.0,126400000.0,126631000.0,126843000.0,127149000.0,127445000.0,127718000.0,127761000.0,127773000.0,127854000.0,128001000.0,128063000.0,128047000.0,128070000.0,127833000.0,127629000.0,127445000.0,127276000.0,127141000.0,126994511.0,126785797.0,126529100.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1072"},"selection_policy":{"id":"1073"}},"id":"1040","type":"ColumnDataSource"},{"attributes":{"line_color":"magenta","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1054","type":"Line"},{"attributes":{"line_color":"red","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1036","type":"Line"},{"attributes":{},"id":"1076","type":"Selection"},{"attributes":{"data":{"Country":["China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China","China"],"Population":[667070000.0,660330000.0,665770000.0,682335000.0,698355000.0,715185000.0,735400000.0,754550000.0,774510000.0,796025000.0,818315000.0,841105000.0,862030000.0,881940000.0,900350000.0,916395000.0,930685000.0,943455000.0,956165000.0,969005000.0,981235000.0,993885000.0,1008630000.0,1023310000.0,1036825000.0,1051040000.0,1066790000.0,1084035000.0,1101630000.0,1118650000.0,1135185000.0,1150780000.0,1164970000.0,1178440000.0,1191835000.0,1204855000.0,1217550000.0,1230075000.0,1241935000.0,1252735000.0,1262645000.0,1271850000.0,1280400000.0,1288400000.0,1296075000.0,1303720000.0,1311020000.0,1317885000.0,1324655000.0,1331260000.0,1337705000.0,1344130000.0,1350695000.0,1357380000.0,1364270000.0,1371220000.0,1378665000.0,1386395000.0,1392730000.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1070"},"selection_policy":{"id":"1071"}},"id":"1034","type":"ColumnDataSource"},{"attributes":{"source":{"id":"1046"}},"id":"1051","type":"CDSView"},{"attributes":{},"id":"1077","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"1046"},"glyph":{"id":"1048"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1049"},"selection_glyph":null,"view":{"id":"1051"}},"id":"1050","type":"GlyphRenderer"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1026","type":"BoxAnnotation"},{"attributes":{},"id":"1004","type":"DataRange1d"},{"attributes":{"below":[{"id":"1012"}],"center":[{"id":"1015"},{"id":"1019"}],"left":[{"id":"1016"}],"renderers":[{"id":"1038"},{"id":"1044"},{"id":"1050"},{"id":"1056"},{"id":"1062"}],"title":{"id":"1002"},"toolbar":{"id":"1027"},"x_range":{"id":"1004"},"x_scale":{"id":"1008"},"y_range":{"id":"1006"},"y_scale":{"id":"1010"}},"id":"1001","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1078","type":"Selection"},{"attributes":{"line_color":"green","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1060","type":"Line"},{"attributes":{"line_color":"blue","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1042","type":"Line"},{"attributes":{"data":{"Country":["Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines","Philippines"],"Population":[26269734.0,27161047.0,28077339.0,29012625.0,29958688.0,30909988.0,31864182.0,32823968.0,33795194.0,34786305.0,35803594.0,36849675.0,37923396.0,39022767.0,40144248.0,41285742.0,42446653.0,43629412.0,44838483.0,46079850.0,47357743.0,48672838.0,50023563.0,51408912.0,52827040.0,54275822.0,55755355.0,57263836.0,58795001.0,60340767.0,61895160.0,63454786.0,65020116.0,66593904.0,68180859.0,69784088.0,71401749.0,73030884.0,74672014.0,76325927.0,77991755.0,79672873.0,81365258.0,83051971.0,84710542.0,86326250.0,87888675.0,89405482.0,90901965.0,92414158.0,93966780.0,95570047.0,97212638.0,98871552.0,100513138.0,102113212.0,103663927.0,105173264.0,106651922.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1076"},"selection_policy":{"id":"1077"}},"id":"1052","type":"ColumnDataSource"},{"attributes":{},"id":"1079","type":"UnionRenderers"},{"attributes":{"text":"Population of countries throught the years"},"id":"1002","type":"Title"},{"attributes":{},"id":"1020","type":"PanTool"},{"attributes":{"line_alpha":0.1,"line_color":"red","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1037","type":"Line"},{"attributes":{},"id":"1021","type":"WheelZoomTool"},{"attributes":{},"id":"1008","type":"LinearScale"},{"attributes":{"source":{"id":"1034"}},"id":"1039","type":"CDSView"},{"attributes":{},"id":"1071","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"1034"},"glyph":{"id":"1036"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1037"},"selection_glyph":null,"view":{"id":"1039"}},"id":"1038","type":"GlyphRenderer"},{"attributes":{},"id":"1006","type":"DataRange1d"},{"attributes":{"overlay":{"id":"1026"}},"id":"1022","type":"BoxZoomTool"},{"attributes":{"data":{"Country":["Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam","Vietnam"],"Population":[32670039.0,33666110.0,34683407.0,35721217.0,36779999.0,37858951.0,38958048.0,40072948.0,41193601.0,42307146.0,43404793.0,44484035.0,45548479.0,46603525.0,47657561.0,48718189.0,49785282.0,50861162.0,51959015.0,53095408.0,54281846.0,55522803.0,56814306.0,58148384.0,59512619.0,60896721.0,62293856.0,63701972.0,65120439.0,66550234.0,67988862.0,69436954.0,70883481.0,72300308.0,73651218.0,74910461.0,76068743.0,77133214.0,78115710.0,79035871.0,79910412.0,80742499.0,81534407.0,82301656.0,83062821.0,83832661.0,84617540.0,85419591.0,86243413.0,87092252.0,87967651.0,88871561.0,89802487.0,90753472.0,91714595.0,92677076.0,93638724.0,94596642.0,95540395.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1078"},"selection_policy":{"id":"1079"}},"id":"1058","type":"ColumnDataSource"},{"attributes":{},"id":"1023","type":"SaveTool"},{"attributes":{"line_color":"orange","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1048","type":"Line"},{"attributes":{},"id":"1024","type":"ResetTool"},{"attributes":{"data_source":{"id":"1052"},"glyph":{"id":"1054"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1055"},"selection_glyph":null,"view":{"id":"1057"}},"id":"1056","type":"GlyphRenderer"},{"attributes":{"data":{"Country":["Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia","Mongolia"],"Population":[955505.0,982178.0,1011324.0,1042383.0,1074514.0,1107124.0,1139961.0,1173191.0,1207104.0,1242214.0,1278825.0,1317050.0,1356670.0,1397304.0,1438425.0,1479651.0,1520865.0,1562209.0,1603906.0,1646291.0,1689622.0,1733475.0,1777727.0,1823216.0,1871090.0,1921881.0,1976310.0,2033344.0,2089715.0,2141011.0,2184145.0,2217917.0,2243495.0,2263186.0,2280479.0,2298020.0,2316568.0,2335734.0,2355664.0,2376225.0,2397418.0,2419588.0,2443271.0,2468762.0,2496391.0,2526424.0,2558856.0,2593820.0,2631898.0,2673796.0,2719896.0,2770362.0,2824699.0,2881792.0,2940108.0,2998439.0,3056359.0,3113779.0,3170208.0],"Year":["1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018"]},"selected":{"id":"1074"},"selection_policy":{"id":"1075"}},"id":"1046","type":"ColumnDataSource"},{"attributes":{},"id":"1025","type":"HelpTool"},{"attributes":{"line_alpha":0.1,"line_color":"magenta","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1055","type":"Line"},{"attributes":{},"id":"1010","type":"LinearScale"},{"attributes":{"source":{"id":"1052"}},"id":"1057","type":"CDSView"},{"attributes":{"formatter":{"id":"1068"},"ticker":{"id":"1013"}},"id":"1012","type":"LinearAxis"},{"attributes":{"data_source":{"id":"1040"},"glyph":{"id":"1042"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1043"},"selection_glyph":null,"view":{"id":"1045"}},"id":"1044","type":"GlyphRenderer"},{"attributes":{},"id":"1070","type":"Selection"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{"line_alpha":0.1,"line_color":"green","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1061","type":"Line"},{"attributes":{},"id":"1066","type":"BasicTickFormatter"},{"attributes":{},"id":"1013","type":"BasicTicker"},{"attributes":{"line_alpha":0.1,"line_color":"blue","x":{"field":"Year"},"y":{"field":"Population"}},"id":"1043","type":"Line"},{"attributes":{},"id":"1072","type":"Selection"},{"attributes":{"data_source":{"id":"1058"},"glyph":{"id":"1060"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1061"},"selection_glyph":null,"view":{"id":"1063"}},"id":"1062","type":"GlyphRenderer"},{"attributes":{"source":{"id":"1040"}},"id":"1045","type":"CDSView"},{"attributes":{"axis":{"id":"1012"},"ticker":null},"id":"1015","type":"Grid"},{"attributes":{},"id":"1068","type":"BasicTickFormatter"},{"attributes":{},"id":"1073","type":"UnionRenderers"},{"attributes":{"axis":{"id":"1016"},"dimension":1,"ticker":null},"id":"1019","type":"Grid"},{"attributes":{"formatter":{"id":"1066"},"ticker":{"id":"1017"}},"id":"1016","type":"LinearAxis"},{"attributes":{},"id":"1074","type":"Selection"}],"root_ids":["1001"]},"title":"Bokeh Application","version":"2.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1433').textContent;
+                  var render_items = [{"docid":"12680213-d96b-4c33-bffc-1d471fdaf3f1","root_ids":["1001"],"roots":{"1001":"c8f77b9d-9af9-4e23-9f41-87c9b80f0e65"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
